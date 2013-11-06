@@ -1,0 +1,102 @@
+@font-face {
+	font-family: SquareGothic;
+	src: url(../fonts/square-gothic.woff);
+}
+@font-face {
+	font-family: PrinceTownLet;
+	src: url(../fonts/princetown-let-plain.woff);
+}
+body {
+	background-color: #fff;
+}
+.max-width {
+	width: 980px;
+}
+
+
+
+#header {
+	height: 115px;
+	background-color: #2c156c;
+}
+	#header .wrapper > .column {
+		height: 80px;
+	}
+	#header .wrapper > .col1 {
+		width: 78px;
+	}
+		#header .logo {
+			margin: 12px 0 0 12px;
+		}
+	
+	
+	#header .wrapper > .col2 {
+		width: 635px;
+	}
+		#header .site-name {
+			padding-top: 12px;
+			font: 18px 'times new roman';
+			color: #fff;
+		}
+	
+	
+	#header .wrapper > .col3 {
+		width: 267px;
+	}
+		#header .search {
+			padding-top: 30px;
+		}
+		#header .input-text {
+			padding: 0 5px;
+			width: 155px;
+			height: 25px;
+			font: 12px arial;
+			border-radius: 4px;
+		}
+		#header .submit {
+			margin: 0 0 0 8px;
+			height: 25px;
+			font: 12px arial;
+			line-height: 0;
+			letter-spacing: 1px;
+			border-radius: 4px;
+		}
+	
+	
+	#header .navigation {
+		height: 35px;
+		font: 17px SquareGothic;
+		background-color: #ffca00;
+	}
+		#header .nav {
+			margin-right: 18px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			text-transform: uppercase;
+			color: #2c156c;
+		}
+		#header .nav:hover {
+			color: #f00;
+		}
+		#header .navigation > .colsgroup > .nav:first-child {
+			margin-left: 12px;
+		}
+
+
+
+#main {
+	
+}
+
+
+#footer {
+	margin-top: 40px;
+	height: 45px;
+	text-align: center;
+	background-color: #ffca00;
+}
+	#footer .copyright {
+		font: 12px tahoma;
+		line-height: 45px;
+	}

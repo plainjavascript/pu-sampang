@@ -1,0 +1,143 @@
+#big-slide {
+	height: 400px;
+}
+	#big-slide .wrapper {
+		height: 370px;
+	}
+	#big-slide .frame {
+		min-width: 640px;
+		overflow: hidden;
+	}
+	#big-slide .images-wrapper {
+		overflow: hidden;
+	}
+	#big-slide .images-wrapper > img {
+		width: 640px;
+		height: 370px;
+		opacity: 0.2;
+	}
+	#big-slide .images-wrapper > .current {
+		height: 400px;
+		opacity: 1;
+	}
+
+
+
+
+
+#main .slogan {
+	padding: 35px 0;
+	font: 30px PrinceTownLet;
+	text-align: center;
+	color: #2c156c;
+}
+
+
+
+
+
+#main .main-content > .col1 {
+	width: 485px;
+}
+#main .main-content > .col2 {
+	width: 475px;
+}
+#news-slide {
+	padding: 20px;
+	width: 445px;
+	height: 390px;
+	background-color: #2c156c;
+}
+	#news-slide > .frame {
+		height: 360px;
+		overflow: hidden;
+	}
+	#news-slide > .frame > .wrapper {
+		
+	}
+	#news-slide .list {
+		margin-bottom: 15px;
+		width: 445px;
+		height: 105px;
+		overflow: hidden;
+	}
+	#news-slide .list > .col1 {
+		width: 125px;
+	}
+	#news-slide img {
+		max-width: 125px;
+	}
+	#news-slide .list > .col2 {
+		padding-left: 10px;
+		width: 310px;
+		font-family: helvetica, arial;
+	}
+	#news-slide .title {
+		padding: 2px 5px 1px;
+		font-weight: bold;
+		font-size: 12px;
+		color: #000;
+		background-color: #ffca00;
+	}
+	#news-slide .title:hover {
+		background-color: #b39df0;
+	}
+	#news-slide .date {
+		margin: 6px 0 4px;
+		font-size: 11px;
+		color: #f5c20a;
+	}
+	#news-slide .description {
+		font: 12px georgia;
+		color: #aaa;
+	}
+	#news-slide .slider {
+		padding-top: 12px;
+		width: 90px;
+		height: 15px;
+	}
+	#news-slide .slider > .arrow {
+		width: 34px;
+		height: 15px;
+		cursor: pointer;
+	}
+	#news-slide .previous {
+		background: url(news-slider-up.png) 0 0 no-repeat;
+	}
+	#news-slide .previous:hover {
+		background: url(news-slider-up.png) 0 -16px no-repeat;
+	}
+	#news-slide .next {
+		margin-left: 54px;
+		background: url(news-slider-down.png) 0 0 no-repeat;
+	}
+	#news-slide .next:hover {
+		background: url(news-slider-down.png) 0 -16px no-repeat;
+	}
+
+
+
+
+
+#program-promo {
+	width: 428px;
+}
+	#program-promo .col-a {
+		margin-right: 22px;
+	}
+	#program-promo a {
+		margin-bottom: 22px;
+		width: 203px;
+		height: 123px;
+		background-color: #ddd;
+	}
+	#program-promo a:hover img {
+		box-shadow: 0 0 20px 1px #FFCA00;
+	}
+	#program-promo img {
+		width: 203px;
+		height: 123px;
+		-webkit-transition: 400ms box-shadow;
+		   -moz-transition: 400ms box-shadow;
+		        transition: 400ms box-shadow;
+	}

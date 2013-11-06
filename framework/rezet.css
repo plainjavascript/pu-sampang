@@ -1,0 +1,193 @@
+/*!
+name	: rezet.css
+version	: 1.0.0
+license	: public license
+
+
+by javas | twitter: @purejavascript | mail: plainjavascript@gmail.com
+part of Divren Company (www.divren.co.id)
+*/
+
+
+
+ /*! reset */
+header, main, footer, body, nav, p, h1, h2, h3, h4, h5, h6, form, input, button, img, ol, ul, li, table, thead, tbody, tfoot, th, tr, td, th {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+header, main, footer, nav {
+	display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+input {
+	vertical-align: middle;
+}
+textarea {
+	resize: none;
+	overflow: auto;
+}
+a {
+	text-decoration: none;
+}
+a img, a img:hover {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ol.not-list, ol.not-list li, ul.not-list, ul.not-list li {
+	list-style: none;
+}
+.no-outline:focus {
+	outline: none;
+}
+.no-overflow {
+	overflow: hidden;
+}
+
+
+
+/*! display */
+.none {
+	display: none;
+}
+.block {
+	display: block;
+}
+.inline {
+	display: inline;
+}
+.inline-block {
+	display: inline-block;
+}
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	z-index: -50;
+}
+
+
+
+/*! positioning */
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+.fixed {
+	position: fixed;
+}
+.static {
+	position: static;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	margin: 0 auto;
+}
+.clear {
+	float: none;
+	clear: both;
+}
+
+
+
+/*! formatting */
+.bold {
+	font-weight: 700;
+}
+.italic {
+	font-style: italic;
+}
+.bold-italic {
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+/*! miscelanous */
+.black {
+	color: #000;
+}
+.white {
+	color: #fff;
+}
+.red {
+	color: #f00;
+}
+.blue {
+	color: #00f;
+}
+
+
+
+/*! transition */
+.transition-all {
+	-moz-transition: all 400ms;
+	-webkit-transition: all 400ms;
+	transition: all 400ms;
+}
+
+.transition-bg {
+	-moz-transition: background-color 400ms;
+	-webkit-transition: background-color 400ms;
+	transition: background-color 400ms;
+}
+
+.transition-color {
+	-moz-transition: color 400ms;
+	-webkit-transition: color 400ms;
+	transition: color 400ms;
+}
+
+.transition-opacity {
+	-moz-transition: opacity 400ms;
+	-webkit-transition: opacity 400ms;
+	transition: opacity 400ms;
+}
+
+
+
+/*! columns group */
+.colsgroup {
+	
+}
+	.colsgroup > .column {
+		float: left;
+	}
+.colsgroup:after {
+	float: none;
+	clear: both;
+	content: '';
+	display: block;
+}
+
+
+
+/*! table */
+.table {
+
+}
+	.table > .row {
+		
+	}
+		.table > .row > .column {
+			float: left;
+		}
+	.table > .row:after {
+		float: none;
+		clear: both;
+		content: '';
+		display: block;
+	}

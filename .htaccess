@@ -1,0 +1,86 @@
+SetEnv TZ Asia/Jakarta
+AddDefaultCharset UTF-8
+DefaultLanguage en-US
+
+
+
+Options -Indexes
+
+
+
+Header unset Pragma
+Header unset ETag
+FileETag None
+
+
+
+<FilesMatch "\.(js|css)$">
+SetOutputFilter DEFLATE
+Header set Cache-Control "max-age=3600, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(xml|xsl)$">
+SetOutputFilter DEFLATE
+Header set Cache-Control "max-age=43200, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(php|html|htm|txt)$">
+SetOutputFilter DEFLATE
+Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(ico|pdf|woff|eot)$">
+SetOutputFilter DEFLATE
+Header set Cache-Control "max-age=604800, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(avi|mpg|mpeg|mp3)$">
+SetOutputFilter DEFLATE
+Header set Cache-Control "max-age=172800, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(swf|flv|mp4|3gp|mov)$">
+SetOutputFilter DEFLATE
+Header set Cache-Control "max-age=86400, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(gif|png)$">
+Header set Cache-Control "max-age=86400, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg)$">
+Header set Cache-Control "max-age=3600, must-revalidate"
+</FilesMatch>
+
+#Hard-caching
+#---------------------------------------------------
+#<FilesMatch "\.(ext|ext|ext)$">
+#Header set Cache-Control "public, no-transform"
+#Header set Expires "Fri, 25 Dec 2020 20:00:00 GMT"
+#</FilesMatch>
+#---------------------------------------------------
+#Don't try this
+
+
+
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?url1=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?url1=$1&url2=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?url1=$1&url2=$2&url3=$3
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?url1=$1&url2=$2&url3=$3&url4=$4
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/$ index.php?url1=$1&url2=$2&url3=$3&url4=$4&url5=$5
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?url1=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?url1=$1&url2=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?url1=$1&url2=$2&url3=$3
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?url1=$1&url2=$2&url3=$3&url4=$4
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?url1=$1&url2=$2&url3=$3&url4=$4&url5=$5

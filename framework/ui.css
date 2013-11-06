@@ -1,0 +1,40 @@
+/*! general ui styles */
+.ui {
+	font-size: 100%;
+}
+
+
+
+/*! basic button */
+.ui.button {
+	padding: 7px 8px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #0078e7;
+	border-radius: 4px;
+	display: block;
+	cursor: pointer;
+
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	      o-user-select: none;
+	        user-select: none;
+
+	-webkit-transition: background-color 400ms;
+	   -moz-transition: background-color 400ms;
+	        transition: background-color 400ms;
+}
+.ui.button:hover {
+	background-color: #015cb0;
+}
+.ui.button:active {
+	background-color: #00417d;
+}
+
+
+
