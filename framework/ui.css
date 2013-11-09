@@ -7,13 +7,13 @@
 
 /*! basic button */
 .ui.button {
-	padding: 7px 8px;
+	padding: 0 8px;
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
 	background-color: #0078e7;
 	border-radius: 4px;
-	display: block;
+	display: inline-block;
 	cursor: pointer;
 
 	-moz-box-sizing: border-box;
