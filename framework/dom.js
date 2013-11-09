@@ -98,22 +98,22 @@ function dom(element) {
 	
 	
 	return {
-		byId		: byId,
-		byClass		: byClass,
-		byTag		: byTag,
-		qs			: qs,
-		qsa			: qsa,
-		on			: on,
-		off			: off,
-		click		: click,
-		mouseup		: mouseup,
-		mousedown	: mousedown,
-		keyup		: keyup,
-		keydown		: keydown,
-		focus		: focus,
-		blur		: blur,
-		change		: change,
-		submit		: submit
+		byId      : byId,
+		byClass   : byClass,
+		byTag     : byTag,
+		qs        : qs,
+		qsa       : qsa,
+		on        : on,
+		off       : off,
+		click     : click,
+		mouseup   : mouseup,
+		mousedown : mousedown,
+		keyup     : keyup,
+		keydown   : keydown,
+		focus     : focus,
+		blur      : blur,
+		change    : change,
+		submit    : submit
 	};
 
 }
