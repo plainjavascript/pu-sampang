@@ -11,7 +11,7 @@ part of Divren Company (www.divren.co.id)
 
 
  /*! reset */
-header, main, footer, body, nav, p, h1, h2, h3, h4, h5, h6, form, input, button, img, ol, ul, li, table, thead, tbody, tfoot, th, tr, td, th {
+header, main, footer, body, nav, p, h1, h2, h3, h4, h5, h6, form, textarea, input, button, img, ol, ul, li, table, thead, tbody, tfoot, th, tr, td, th {
 	margin: 0;
 	padding: 0;
 	border: 0;
